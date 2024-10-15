@@ -127,6 +127,7 @@
   justify-content: end;
   gap: 1rem;
   margin-left: 5px;
+  margin-left: 1px;
 }
 .logo-img .img .names-rost .gold {
   width: 210px;
