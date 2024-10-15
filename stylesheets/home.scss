@@ -1,0 +1,213 @@
+@import 'mix';
+@media screen and (max-width: 390px) {
+    .header-nav {
+
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+       
+
+        .icons-nav {
+            display: none;
+
+            .icons-font {
+                display: none;
+            }
+        }
+
+        .logo {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+
+            justify-content: space-evenly;
+            margin-top: 1rem;
+            font-family: "Allerta Stencil", sans-serif;
+
+            .icon-ship {
+                display: flex;
+                width: 288.28px;
+                align-items: center;
+                justify-content: end;
+                font-size: 18px;
+                gap: 1rem;
+
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 40px;
+                color: #000;
+
+                b {
+                    color: #A18A68;
+                }
+            }
+        }
+
+        .nav-bar {
+            display: none;
+
+        }
+
+    }
+}
+
+.search-container {
+
+    .search-container1 {
+        display: flex;
+        justify-content: center;
+
+
+        .search-input-container {
+            position: relative;
+
+
+            i {
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #888; // Cor da lupa
+                font-size: 14px; // Tamanho da lupa
+            }
+
+            // Input de pesquisa
+            .search-input {
+                width: 300px;
+                padding: 10px 10px 10px 30px; // Espaço para o ícone
+                border: 2px solid #ccc;
+
+                outline: none;
+                font-size: 16px;
+                background-color: transparent; // Fundo transparente
+                color: #333; // Cor do texto
+
+                &::placeholder {
+                    color: #888;
+                }
+
+                &:focus {
+                    border-color: #007bff; // Cor da borda ao focar
+                }
+            }
+        }
+    }
+}
+
+
+
+.scroll-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth; // Para uma rolagem suave
+    scrollbar-width: none; // Remove barra de rolagem visível no Firefox
+
+    &::-webkit-scrollbar {
+        display: none; // Remove barra de rolagem visível no Chrome, Safari, etc.
+    }
+
+    .scroll-item {
+        min-width: 150px;
+        margin: 10px;
+        padding: 20px;
+        background-color: transparent;
+        color: #000000;
+        text-align: center;
+        font-family: "Allerta Stencil", sans-serif;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+}
+
+.logo-img {
+
+    width: 100%;
+    height: 299px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .img {
+        width: 95%;
+        position: relative;
+        height: 299px;
+        border-radius: 12px;
+        background-image: url(../src/img/rosto.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .names-rost {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: end;
+
+            gap: 1rem;
+            margin-left: 5px;
+
+            .gold {
+
+                width: 210px;
+                height: 79px;
+
+
+
+                p {
+                    color: #fff;
+                    font-family: 'Inter';
+                    font-size: 30px;
+                    font-weight: 400;
+                }
+
+                .valor {
+                    width: 100px;
+                    margin-top: 1rem;
+
+
+                    span {
+                        color: #fff;
+                        font-family: 'Inter';
+
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    .view-prodyct {
+        display: flex;
+        width: 100%;
+
+        .view {
+            width: 150px;
+            height: 32px;
+            border: 1px solid #fbfdff;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+
+            p {
+
+                font-family: 'Inter';
+                
+            }
+        }
+    }
+}

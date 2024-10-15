@@ -1,0 +1,166 @@
+@media screen and (max-width: 390px) {
+  .header-nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-nav .icons-nav {
+    display: none;
+  }
+  .header-nav .icons-nav .icons-font {
+    display: none;
+  }
+  .header-nav .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    font-family: "Allerta Stencil", sans-serif;
+  }
+  .header-nav .logo .icon-ship {
+    display: flex;
+    width: 288.28px;
+    align-items: center;
+    justify-content: end;
+    font-size: 18px;
+    gap: 1rem;
+  }
+  .header-nav .logo a {
+    text-decoration: none;
+    font-size: 40px;
+    color: #000;
+  }
+  .header-nav .logo a b {
+    color: #A18A68;
+  }
+  .header-nav .nav-bar {
+    display: none;
+  }
+}
+.search-container .search-container1 {
+  display: flex;
+  justify-content: center;
+}
+.search-container .search-container1 .search-input-container {
+  position: relative;
+}
+.search-container .search-container1 .search-input-container i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 14px;
+}
+.search-container .search-container1 .search-input-container .search-input {
+  width: 300px;
+  padding: 10px 10px 10px 30px;
+  border: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent;
+  color: #333;
+}
+.search-container .search-container1 .search-input-container .search-input::-moz-placeholder {
+  color: #888;
+}
+.search-container .search-container1 .search-input-container .search-input::placeholder {
+  color: #888;
+}
+.search-container .search-container1 .search-input-container .search-input:focus {
+  border-color: #007bff;
+}
+
+.scroll-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+.scroll-container .scroll-item {
+  min-width: 150px;
+  margin: 10px;
+  padding: 20px;
+  background-color: transparent;
+  color: #000000;
+  text-align: center;
+  font-family: "Allerta Stencil", sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.logo-img {
+  width: 100%;
+  height: 299px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-img .img {
+  width: 95%;
+  position: relative;
+  height: 299px;
+  border-radius: 12px;
+  background-image: url(../src/img/rosto.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.logo-img .img .names-rost {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: end;
+  gap: 1rem;
+  margin-left: 5px;
+}
+.logo-img .img .names-rost .gold {
+  width: 210px;
+  height: 79px;
+}
+.logo-img .img .names-rost .gold p {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 30px;
+  font-weight: 400;
+}
+.logo-img .img .names-rost .gold .valor {
+  width: 100px;
+  margin-top: 1rem;
+}
+.logo-img .img .names-rost .gold .valor span {
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 400;
+}
+.logo-img .view-prodyct {
+  display: flex;
+  width: 100%;
+}
+.logo-img .view-prodyct .view {
+  width: 150px;
+  height: 32px;
+  border: 1px solid #fbfdff;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.logo-img .view-prodyct .view p {
+  font-family: "Inter";
+}/*# sourceMappingURL=home.css.map */
