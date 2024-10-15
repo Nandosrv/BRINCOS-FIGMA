@@ -1,5 +1,5 @@
 @import 'mix';
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
     .header-nav {
 
         width: 100%;
@@ -44,12 +44,113 @@
                     color: #A18A68;
                 }
             }
+            #nav-icon1 {
+                width: 35px;
+                height: 30px;
+                position: relative;
+                cursor: pointer;
+                display: inline-block;
+                z-index: 10;
+                 display: flex;
+                  align-items: center;
+                  justify-content: center;
+                
+                span {
+                  background-color: #555; // cor mais refinada
+                  position: absolute;
+                  height: 2px; // linha mais fina
+                  width: 20px;
+                  border-radius: 2px;
+                  transition: all 0.4s ease-in-out;
+                 
+              
+                  &:nth-child(1) {
+                    top: 0;
+                  }
+                  
+                  &:nth-child(2) {
+                    top: 10px;
+                  }
+                  
+                  &:nth-child(3) {
+                    top: 20px;
+                  }
+                }
+              
+                &.open span {
+                  &:nth-child(1) {
+                    transform: rotate(45deg);
+                    top: 13px;
+                  }
+              
+                  &:nth-child(2) {
+                    opacity: 0;
+                  }
+              
+                  &:nth-child(3) {
+                    transform: rotate(-45deg);
+                    top: 13px;
+                  }
+                }
+              }
+              
+              .nav-bar {
+                display: none;
+                z-index: 2;
+                background-color: #fff; // fundo elegante, cor neutra
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // sombra suave
+                position: absolute;
+                top: 40px;
+                right: 0;
+                width: 80%;
+                text-align: center;
+                border-radius: 8px;
+                transition: all 0.5s ease-in-out;
+                
+                ul {
+                  list-style-type: none;
+                  padding: 10px 0;
+                  margin: 0;
+                  a{
+                    font-size: 30px;
+                    text-decoration: none;
+                    list-style: none;
+                    &:hover {
+                        color: #c19a6b; // cor dourada para hover
+                      }
+                }
+              
+                  li {
+                    
+                    
+                    padding: 12px 0;
+                    font-size: 16px;
+                    color: #555;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    transition: color 0.3s ease-in-out;
+                    
+                    &:hover {
+                      color: #c19a6b; // cor dourada para hover
+                    }
+                    
+                  }
+                }
+              
+                &.active {
+                  display: block;
+                }
+              }
+              
         }
 
         .nav-bar {
             display: none;
-
+            list-style: none;
         }
+        
 
     }
 }
@@ -203,11 +304,64 @@
             justify-content: center;
             margin-bottom: 1rem;
 
-            p {
+            a {
 
                 font-family: 'Inter';
-                
+                text-decoration: none;
+                color: #fff;
             }
         }
     }
+}
+.tittle-brincos{
+    width: 100%;
+    margin-top: 1.7rem;
+    display: flex;
+    
+   
+    .tittle1{
+        width: 95%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+       
+        p{
+            color: #000;
+            font-family: "Inter";
+        }
+        .view-all{
+            display: flex;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                width: 70px;
+                
+                color: #A18A68;
+            }
+
+        }
+    }
+}
+.cads-brincos{
+    display: flex;
+    width: 95%;
+    height: 136px;
+    margin-top: 1rem;
+    margin-left: 10px;
+    border: 1px solid;
+    justify-content: space-between;
+    
+
+    .main-card{
+        width: 150px;
+        background-image: url(../src/img/cad1.png);
+        display: flex;
+    }
+    
 }
