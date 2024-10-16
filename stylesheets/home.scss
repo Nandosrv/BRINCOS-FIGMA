@@ -238,17 +238,32 @@
     height: 299px;
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    padding: 5px;
+    position: relative;
+    .pp{
+        position: absolute;
+        width: 95%;
+        height: 100%;
+        object-fit: contain;
+        
+         left: 5px;  
+         .cards_img{
+            width: 100%;
+            height: 100%;
+       
+         }
+     
+    }
+    
     .img {
         width: 95%;
         position: relative;
         height: 299px;
         border-radius: 12px;
-        background-image: url(../src/img/rosto.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        object-fit: cover;
+        padding: 2px;
+        
+        
 
         .names-rost {
             display: flex;
@@ -468,6 +483,7 @@
       text-decoration: none;
       color: #000;
       font-size: 17px;
+       
       
     }
     span{
