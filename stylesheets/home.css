@@ -284,14 +284,114 @@
 .cads-brincos {
   display: flex;
   width: 95%;
-  height: 136px;
+  height: 188px;
   margin-top: 1rem;
   margin-left: 10px;
-  border: 1px solid;
   justify-content: space-between;
 }
 .cads-brincos .main-card {
-  width: 150px;
-  background-image: url(../src/img/cad1.png);
   display: flex;
+  width: 140px;
+  height: 100%;
+  background-image: url(../src/img/cad1.png);
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+  border: 12px;
+  align-items: end;
+}
+.cads-brincos .main-card .card {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.cads-brincos .main-card p {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-family: "Inter";
+}
+.cads-brincos .main-card span {
+  color: #A18A68;
+  font-size: 15px;
+}
+.cads-brincos .main-card1 {
+  display: flex;
+  width: 140px;
+  height: 100%;
+  background-image: url(../src/img/cad2.png);
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+  border: 12px;
+  align-items: end;
+}
+.cads-brincos .main-card1 .card {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.cads-brincos .main-card1 p {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-family: "Inter";
+}
+.cads-brincos .main-card1 span {
+  color: #A18A68;
+  font-size: 15px;
+}
+
+.card-contest {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 136px;
+  position: relative;
+  justify-content: center;
+}
+.card-contest .img-cards {
+  width: 95%;
+  display: flex;
+  background-image: url(../src/img/cardlist.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-contest .card_list {
+  width: 95%;
+  height: 20px;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  margin: 2px;
+  justify-content: start;
+}
+.card-contest .card_list a {
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+  width: 70px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #A18A68;
+}
+.card-contest .card_list1 {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: end;
+  gap: 10px;
+}
+.card-contest .card_list1 a {
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+}
+.card-contest .card_list1 span {
+  color: #A18A68;
+}
+
+body {
+  height: 1100px;
 }/*# sourceMappingURL=home.css.map */
