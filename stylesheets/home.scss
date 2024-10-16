@@ -352,9 +352,9 @@
     display: flex;
     width: 95%;
     height: 188px;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 10px;
-    
+    margin-bottom: 1rem;
     justify-content: space-between;
     
 
@@ -364,7 +364,7 @@
         height: 100%;
         background-image: url(../src/img/cad1.png);
         background-repeat: no-repeat;
-        border: 1px solid #ccc;
+        
         border: 12px;
         
         align-items: end;
@@ -392,7 +392,7 @@
         height: 100%;
         background-image: url(../src/img/cad2.png);
         background-repeat: no-repeat;
-        border: 1px solid #ccc;
+        
         border: 12px;
         align-items: end;
         .card{
@@ -418,7 +418,7 @@
 .card-contest{
     display: flex;
     width: 100%;
-    border: 1px solid #ccc;
+    
     height: 136px;
     position: relative;
     justify-content: center;
@@ -475,7 +475,4 @@
       }
    } 
 
-}
-body{
-    height: 1100px;
 }
